@@ -39,10 +39,11 @@ function setup()
 
 function Colisao()
 {
-
+    //verifica colunas
     if ((xrocket>=xaviao && xrocket<=xaviao+largura_aviao)
         ||(xrocket+largura_rocket>=xaviao && xrocket+largura_rocket<=xaviao+largura_aviao))
     {
+        //verifica linhas
         if (yrocket+altura_rocket>=yaviao && yrocket+altura_rocket<=yaviao+altura_aviao)
             return true;
         if (yrocket>=yaviao && yrocket<=yaviao+altura_aviao)
